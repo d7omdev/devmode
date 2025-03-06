@@ -1,0 +1,23 @@
+{
+	"name": "devmode",
+	"version": "1.0.0",
+	"description": "A simple helper extension for developers working on localhost environments.",
+	"scripts": {
+		"start": "web-ext run",
+		"build": "web-ext build --overwrite-dest",
+		"lint": "web-ext lint",
+		"clean": "rm -rf web-ext-artifacts",
+		"prepare": "bun run clean && bun run build"
+	},
+	"dependencies": {
+		"web-ext": "^6.8.0"
+	},
+	"author": "D7OM <hello@d7om.dev>",
+	"license": "MIT",
+	"keywords": [
+		"web-extension",
+		"dev-helper",
+		"localhost",
+		"developer-tools"
+	]
+}
