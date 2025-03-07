@@ -1,13 +1,14 @@
 {
 	"name": "devmode",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A simple helper extension for developers working on localhost environments.",
 	"scripts": {
 		"start": "web-ext run",
 		"build": "web-ext build --overwrite-dest",
 		"lint": "web-ext lint",
 		"clean": "rm -rf web-ext-artifacts",
-		"prepare": "bun run clean && bun run build"
+		"prepare": "bun run clean && bun run build",
+		"sign": "web-ext sign --api-key=$(pass show AMO_JWT_ISSUER) --api-secret=$(pass show AMO_JWT_SECRET) --channel listed"
 	},
 	"dependencies": {
 		"web-ext": "^6.8.0"

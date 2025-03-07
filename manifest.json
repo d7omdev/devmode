@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Dev Mode",
-	"version": "1.0",
+	"version": "1.0.1",
 	"description": "A simple helper extension for developers working on localhost environments.",
 	"browser_specific_settings": {
 		"gecko": {
